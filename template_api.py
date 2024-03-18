@@ -39,7 +39,8 @@ html_template = Template('''<!doctype html>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
-            background-color: #999;
+            background-color: #f3f3f3;
+             color: #333;;
         }
         h1 {
             padding : 20px;
@@ -49,7 +50,8 @@ html_template = Template('''<!doctype html>
         }
 
         .bird-card:hover {
-            background-color:  rgb(134, 170, 183);
+            background-color: rgb(134, 170, 183);
+            border: 1px solid #ff5722;
         }
 
         .card-img-container {
@@ -76,3 +78,4 @@ html = html_template.substitute(body=texto_img)
 # Guardar el archivo HTML
 with open('index.html', 'w+', encoding='utf-8') as archivo:
     archivo.write(html)
+archivo.close()
